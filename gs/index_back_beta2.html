@@ -1,0 +1,701 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>工伤赔偿</title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript">
+		function account(dj){
+			//定义无伤残 
+			var ylf=parseInt(document.getElementById("ylf").value,10);//医疗费
+			var hlf=parseInt(document.getElementById("hlf").value,10);//护理费
+			var zyts=parseInt(document.getElementById("zyts").value,10);//住院天数
+			var jtf=parseInt(document.getElementById("jtf").value,10);//交通费
+			var tglxq=parseInt(document.getElementById("tglxq").value,10);//停工留薪期
+			var ygz=parseInt(document.getElementById("ygz").value,10);//原工资
+			//定义10级伤残 
+			var ylf_10=parseInt(document.getElementById("ylf_10").value,10);//医疗费
+			var hlf_10=parseInt(document.getElementById("hlf_10").value,10);//护理费
+			var zyts_10=parseInt(document.getElementById("zyts_10").value,10);//住院天数
+			var jtf_10=parseInt(document.getElementById("jtf_10").value,10);//交通费
+			var tglxq_10=parseInt(document.getElementById("tglxq_10").value,10);//停工留薪期
+			var ygz_10=parseInt(document.getElementById("ygz_10").value,10);//原工资
+			var ycx_sc_bzj_10=parseInt(document.getElementById("ycx_sc_bzj_10").value,10);//一次性伤残补助金
+			var ycx_gsyl_bzj_10=parseInt(document.getElementById("ycx_gsyl_bzj_10").value,10);//一次性工伤医疗补助金
+			var ycx_scjy_bzj_10=parseInt(document.getElementById("ycx_scjy_bzj_10").value,10);//一次性伤残就业补助金
+			//定义9级伤残 
+			var ylf_09=parseInt(document.getElementById("ylf_09").value,10);//医疗费
+			var hlf_09=parseInt(document.getElementById("hlf_09").value,10);//护理费
+			var zyts_09=parseInt(document.getElementById("zyts_09").value,10);//住院天数
+			var jtf_09=parseInt(document.getElementById("jtf_09").value,10);//交通费
+			var tglxq_09=parseInt(document.getElementById("tglxq_09").value,10);//停工留薪期
+			var ygz_09=parseInt(document.getElementById("ygz_09").value,10);//原工资
+			var ycx_sc_bzj_09=parseInt(document.getElementById("ycx_sc_bzj_09").value,10);//一次性伤残补助金
+			var ycx_gsyl_bzj_09=parseInt(document.getElementById("ycx_gsyl_bzj_09").value,10);//一次性工伤医疗补助金
+			var ycx_scjy_bzj_09=parseInt(document.getElementById("ycx_scjy_bzj_09").value,10);//一次性伤残就业补助金
+			//定义8级伤残 
+			var ylf_08=parseInt(document.getElementById("ylf_08").value,10);//医疗费
+			var hlf_08=parseInt(document.getElementById("hlf_08").value,10);//护理费
+			var zyts_08=parseInt(document.getElementById("zyts_08").value,10);//住院天数
+			var jtf_08=parseInt(document.getElementById("jtf_08").value,10);//交通费
+			var tglxq_08=parseInt(document.getElementById("tglxq_08").value,10);//停工留薪期
+			var ygz_08=parseInt(document.getElementById("ygz_08").value,10);//原工资
+			var ycx_sc_bzj_08=parseInt(document.getElementById("ycx_sc_bzj_08").value,10);//一次性伤残补助金
+			var ycx_gsyl_bzj_08=parseInt(document.getElementById("ycx_gsyl_bzj_08").value,10);//一次性工伤医疗补助金
+			var ycx_scjy_bzj_08=parseInt(document.getElementById("ycx_scjy_bzj_08").value,10);//一次性伤残就业补助金
+			//定义7级伤残 
+			var ylf_07=parseInt(document.getElementById("ylf_07").value,10);//医疗费
+			var hlf_07=parseInt(document.getElementById("hlf_07").value,10);//护理费
+			var zyts_07=parseInt(document.getElementById("zyts_07").value,10);//住院天数
+			var jtf_07=parseInt(document.getElementById("jtf_07").value,10);//交通费
+			var tglxq_07=parseInt(document.getElementById("tglxq_07").value,10);//停工留薪期
+			var ygz_07=parseInt(document.getElementById("ygz_07").value,10);//原工资
+			var ycx_sc_bzj_07=parseInt(document.getElementById("ycx_sc_bzj_07").value,10);//一次性伤残补助金
+			var ycx_gsyl_bzj_07=parseInt(document.getElementById("ycx_gsyl_bzj_07").value,10);//一次性工伤医疗补助金
+			var ycx_scjy_bzj_07=parseInt(document.getElementById("ycx_scjy_bzj_07").value,10);//一次性伤残就业补助金
+			//定义6级伤残 
+			var ylf_06=parseInt(document.getElementById("ylf_06").value,10);//医疗费
+			var hlf_06=parseInt(document.getElementById("hlf_06").value,10);//护理费
+			var zyts_06=parseInt(document.getElementById("zyts_06").value,10);//住院天数
+			var jtf_06=parseInt(document.getElementById("jtf_06").value,10);//交通费
+			var tglxq_06=parseInt(document.getElementById("tglxq_06").value,10);//停工留薪期
+			var ygz_06=parseInt(document.getElementById("ygz_06").value,10);//原工资
+			var ycx_sc_bzj_06=parseInt(document.getElementById("ycx_sc_bzj_06").value,10);//一次性伤残补助金
+			var ycx_gsyl_bzj_06=parseInt(document.getElementById("ycx_gsyl_bzj_06").value,10);//一次性工伤医疗补助金
+			var ycx_scjy_bzj_06=parseInt(document.getElementById("ycx_scjy_bzj_06").value,10);//一次性伤残就业补助金
+			var fzqjfy_06=parseInt(document.getElementById("fzqjfy_06").value,10);
+			var scjt_06=parseInt(document.getElementById("scjt_06").value,10);
+			//定义5级伤残 
+			var ylf_05=parseInt(document.getElementById("ylf_05").value,10);//医疗费
+			var hlf_05=parseInt(document.getElementById("hlf_05").value,10);//护理费
+			var zyts_05=parseInt(document.getElementById("zyts_05").value,10);//住院天数
+			var jtf_05=parseInt(document.getElementById("jtf_05").value,10);//交通费
+			var tglxq_05=parseInt(document.getElementById("tglxq_05").value,10);//停工留薪期
+			var ygz_05=parseInt(document.getElementById("ygz_05").value,10);//原工资
+			var ycx_sc_bzj_05=parseInt(document.getElementById("ycx_sc_bzj_05").value,10);//一次性伤残补助金
+			var ycx_gsyl_bzj_05=parseInt(document.getElementById("ycx_gsyl_bzj_05").value,10);//一次性工伤医疗补助金
+			var ycx_scjy_bzj_05=parseInt(document.getElementById("ycx_scjy_bzj_05").value,10);//一次性伤残就业补助金
+			var fzqjfy_05=parseInt(document.getElementById("fzqjfy_05").value,10);//辅助器具费用
+			var scjt_05=parseInt(document.getElementById("scjt_05").value,10);//伤残津贴（按月）
+			//定义4级伤残 
+			var ylf_04=parseInt(document.getElementById("ylf_04").value,10);//医疗费
+			var hlf_04=parseInt(document.getElementById("hlf_04").value,10);//护理费
+			var zyts_04=parseInt(document.getElementById("zyts_04").value,10);//住院天数
+			var jtf_04=parseInt(document.getElementById("jtf_04").value,10);//交通费
+			var tglxq_04=parseInt(document.getElementById("tglxq_04").value,10);//停工留薪期
+			var ygz_04=parseInt(document.getElementById("ygz_04").value,10);//原工资
+			var ycx_sc_bzj_04=parseInt(document.getElementById("ycx_sc_bzj_04").value,10);//一次性伤残补助金
+			var fzqjfy_04=parseInt(document.getElementById("fzqjfy_04").value,10);//辅助器具费用
+			var scjt_04=parseInt(document.getElementById("scjt_04").value,10);//伤残津贴（按月）
+			var shhlf_04=parseInt(document.getElementById("shhlf_04").value,10);//生活护理费（按月）
+			var gyqsfxj_04=parseInt(document.getElementById("gyqsfxj_04").value,10);//供养亲属抚恤金
+			//定义3级伤残 
+			var ylf_03=parseInt(document.getElementById("ylf_03").value,10);//医疗费
+			var hlf_03=parseInt(document.getElementById("hlf_03").value,10);//护理费
+			var zyts_03=parseInt(document.getElementById("zyts_03").value,10);//住院天数
+			var jtf_03=parseInt(document.getElementById("jtf_03").value,10);//交通费
+			var tglxq_03=parseInt(document.getElementById("tglxq_03").value,10);//停工留薪期
+			var ygz_03=parseInt(document.getElementById("ygz_03").value,10);//原工资
+			var ycx_sc_bzj_03=parseInt(document.getElementById("ycx_sc_bzj_03").value,10);//一次性伤残补助金
+			var fzqjfy_03=parseInt(document.getElementById("fzqjfy_03").value,10);//辅助器具费用
+			var scjt_03=parseInt(document.getElementById("scjt_03").value,10);//伤残津贴（按月）
+			var shhlf_03=parseInt(document.getElementById("shhlf_03").value,10);//生活护理费（按月）
+			var gyqsfxj_03=parseInt(document.getElementById("gyqsfxj_03").value,10);//供养亲属抚恤金
+			//定义2级伤残 
+			var ylf_02=parseInt(document.getElementById("ylf_02").value,10);//医疗费
+			var hlf_02=parseInt(document.getElementById("hlf_02").value,10);//护理费
+			var zyts_02=parseInt(document.getElementById("zyts_02").value,10);//住院天数
+			var jtf_02=parseInt(document.getElementById("jtf_02").value,10);//交通费
+			var tglxq_02=parseInt(document.getElementById("tglxq_02").value,10);//停工留薪期
+			var ygz_02=parseInt(document.getElementById("ygz_02").value,10);//原工资
+			var ycx_sc_bzj_02=parseInt(document.getElementById("ycx_sc_bzj_02").value,10);//一次性伤残补助金
+			var fzqjfy_02=parseInt(document.getElementById("fzqjfy_02").value,10);//辅助器具费用
+			var scjt_02=parseInt(document.getElementById("scjt_02").value,10);//伤残津贴（按月）
+			var shhlf_02=parseInt(document.getElementById("shhlf_02").value,10);//生活护理费（按月）
+			var gyqsfxj_02=parseInt(document.getElementById("gyqsfxj_02").value,10);//供养亲属抚恤金
+			//定义1级伤残 
+			var ylf_01=parseInt(document.getElementById("ylf_01").value,10);//医疗费
+			var hlf_01=parseInt(document.getElementById("hlf_01").value,10);//护理费
+			var zyts_01=parseInt(document.getElementById("zyts_01").value,10);//住院天数
+			var jtf_01=parseInt(document.getElementById("jtf_01").value,10);//交通费
+			var tglxq_01=parseInt(document.getElementById("tglxq_01").value,10);//停工留薪期
+			var ygz_01=parseInt(document.getElementById("ygz_01").value,10);//原工资
+			var ycx_sc_bzj_01=parseInt(document.getElementById("ycx_sc_bzj_01").value,10);//一次性伤残补助金
+			var fzqjfy_01=parseInt(document.getElementById("fzqjfy_01").value,10);//辅助器具费用
+			var scjt_01=parseInt(document.getElementById("scjt_01").value,10);//伤残津贴（按月）
+			var shhlf_01=parseInt(document.getElementById("shhlf_01").value,10);//生活护理费（按月）
+			var gyqsfxj_01=parseInt(document.getElementById("gyqsfxj_01").value,10);//供养亲属抚恤金
+			//定义工亡
+			var gwylf_die=parseInt(document.getElementById("gwylf_die").value,10);//工亡医疗费
+			var zyhsbzf_die=parseInt(document.getElementById("zyhsbzf_die").value,10);//住院伙食补助费
+			var jtf_die=parseInt(document.getElementById("jtf_die").value,10);//交通费
+			var hlf_die=parseInt(document.getElementById("hlf_die").value,10);//护理费
+			var szbzj_die=parseInt(document.getElementById("szbzj_die").value,10);//丧葬补助金
+			var ycx_gw_bzj_die=parseInt(document.getElementById("ycx_gw_bzj_die").value,10);//一次性工亡补助金
+			var gyqsfxj_die=parseInt(document.getElementById("gyqsfxj_die").value,10);//供养亲属抚恤金
+			//计算无伤残赔偿
+			if(dj=="0"){
+
+			var res_00=ylf+(zyts*35)+jtf+(tglxq*ygz)+hlf;
+			document.getElementById("res_test").value=res_00;
+			}
+			else if(dj=="10")
+			{	
+				var res_100=ylf_10+(zyts_10*35)+jtf_10+(tglxq_10*ygz_10)+hlf_10;//计算十级伤残中的无伤残总额
+				var res_10=res_100+ycx_sc_bzj_10+ycx_gsyl_bzj_10+ycx_scjy_bzj_10;
+				document.getElementById("res_test").value=res_10;
+			}
+			else if(dj=="09")
+			{	
+				var res_090=ylf_09+(zyts_09*35)+jtf_09+(tglxq_09*ygz_09)+hlf_09;
+				var res_09=res_090+ycx_sc_bzj_09+ycx_gsyl_bzj_09+ycx_scjy_bzj_09;
+				document.getElementById("res_test").value=res_09;
+			}
+			else if(dj=="08")
+			{	
+				var res_080=ylf_08+(zyts_08*35)+jtf_08+(tglxq_08*ygz_08)+hlf_08;
+				var res_08=res_080+ycx_sc_bzj_08+ycx_gsyl_bzj_08+ycx_scjy_bzj_08;
+				document.getElementById("res_test").value=res_08;
+			}
+			else if(dj=="07")
+			{	
+				var res_070=ylf_07+(zyts_07*35)+jtf_07+(tglxq_07*ygz_07)+hlf_07;
+				var res_07=res_070+ycx_sc_bzj_07+ycx_gsyl_bzj_07+ycx_scjy_bzj_07;
+				document.getElementById("res_test").value=res_07;
+			}
+			else if(dj=="06")
+			{	
+				var res_060=ylf_06+(zyts_06*35)+jtf_06+(tglxq_06*ygz_06)+hlf_06;
+				var res_06=res_060+ycx_sc_bzj_06+ycx_gsyl_bzj_06+ycx_scjy_bzj_06+fzqjfy_06+scjt_06;
+				document.getElementById("res_test").value=res_06;
+			}else if(dj=="05")
+			{	
+				var res_050=ylf_05+(zyts_05*35)+jtf_05+(tglxq_05*ygz_05)+hlf_05;
+				var res_05=res_050+ycx_sc_bzj_05+ycx_gsyl_bzj_05+ycx_scjy_bzj_05+fzqjfy_05+scjt_05;
+				document.getElementById("res_test").value=res_05;
+			}
+			else if (dj=="04") {
+				var res_040=ylf_04+(zyts_04*35)+jtf_04+(tglxq_04*ygz_04)+hlf_04;
+				var res_04=res_040+ycx_sc_bzj_04+fzqjfy_04+scjt_04+shhlf_04+gyqsfxj_04;
+				document.getElementById("res_test").value=res_04;
+			}
+			else if (dj=="03") {
+				var res_030=ylf_03+(zyts_03*35)+jtf_03+(tglxq_03*ygz_03)+hlf_03;
+				var res_03=res_030+ycx_sc_bzj_03+fzqjfy_03+scjt_03+shhlf_03+gyqsfxj_03;
+				document.getElementById("res_test").value=res_03;
+			}
+			else if (dj=="02") {
+				var res_020=ylf_02+(zyts_02*35)+jtf_02+(tglxq_02*ygz_02)+hlf_02;
+				var res_02=res_020+ycx_sc_bzj_02+fzqjfy_02+scjt_02+shhlf_02+gyqsfxj_02;
+				document.getElementById("res_test").value=res_02;
+			}
+			else if (dj=="01") {
+				var res_010=ylf_01+(zyts_01*35)+jtf_01+(tglxq_01*ygz_01)+hlf_01;
+				var res_01=res_010+ycx_sc_bzj_01+fzqjfy_01+scjt_01+shhlf_01+gyqsfxj_01;
+				document.getElementById("res_test").value=res_01;
+			}
+			else if(dj=="die")
+			{
+				var res_die=gwylf_die+zyhsbzf_die+jtf_die+hlf_die+szbzj_die+ycx_gw_bzj_die+gyqsfxj_die;
+				document.getElementById("res_test").value=res_die;
+			}
+			
+		}
+		function changeMenu(Menutext){
+			if (Menutext=="无伤残") {
+				document.all.ID_0.style.display="block";
+				document.all.ID_10.style.display="none";
+				document.all.ID_09.style.display="none";
+				document.all.ID_08.style.display="none";
+				document.all.ID_07.style.display="none";
+				document.all.ID_06.style.display="none";
+				document.all.ID_05.style.display="none";
+				document.all.ID_04.style.display="none";
+				document.all.ID_03.style.display="none";
+				document.all.ID_02.style.display="none";
+				document.all.ID_01.style.display="none";
+				document.all.ID_die.style.display="none";
+
+			}
+			if (Menutext=="十级伤残") {
+				document.all.ID_0.style.display="none";
+				document.all.ID_10.style.display="block";
+				document.all.ID_09.style.display="none";
+				document.all.ID_08.style.display="none";
+				document.all.ID_07.style.display="none";
+				document.all.ID_06.style.display="none";
+				document.all.ID_05.style.display="none";
+				document.all.ID_04.style.display="none";
+				document.all.ID_03.style.display="none";
+				document.all.ID_02.style.display="none";
+				document.all.ID_01.style.display="none";
+				document.all.ID_die.style.display="none";
+			}
+		
+			 if(Menutext=="九级伤残"){
+			 	document.all.ID_0.style.display="none";
+			 	document.all.ID_10.style.display="none";
+			 	document.all.ID_09.style.display="block";
+				document.all.ID_08.style.display="none";
+				document.all.ID_07.style.display="none";
+				document.all.ID_06.style.display="none";
+				document.all.ID_05.style.display="none";
+				document.all.ID_04.style.display="none";
+				document.all.ID_03.style.display="none";
+				document.all.ID_02.style.display="none";
+				document.all.ID_01.style.display="none";
+				document.all.ID_die.style.display="none";
+			 }
+			if(Menutext=="八级伤残"){
+				document.all.ID_0.style.display="none";
+				document.all.ID_10.style.display="none";
+				document.all.ID_09.style.display="none";
+				document.all.ID_08.style.display="block";
+				document.all.ID_07.style.display="none";
+				document.all.ID_06.style.display="none";
+				document.all.ID_05.style.display="none";
+				document.all.ID_04.style.display="none";
+				document.all.ID_03.style.display="none";
+				document.all.ID_02.style.display="none";
+				document.all.ID_01.style.display="none";
+				document.all.ID_die.style.display="none";
+			}
+			if (Menutext=="七级伤残") {
+				document.all.ID_0.style.display="none";
+				document.all.ID_10.style.display="none";
+				document.all.ID_09.style.display="none";
+				document.all.ID_08.style.display="none";
+				document.all.ID_07.style.display="block";
+				document.all.ID_06.style.display="none";
+				document.all.ID_05.style.display="none";
+				document.all.ID_04.style.display="none";
+				document.all.ID_03.style.display="none";
+				document.all.ID_02.style.display="none";
+				document.all.ID_01.style.display="none";
+				document.all.ID_die.style.display="none";
+			}
+			if (Menutext=="六级伤残") {
+				document.all.ID_0.style.display="none";
+				document.all.ID_10.style.display="none";
+				document.all.ID_09.style.display="none";
+				document.all.ID_08.style.display="none";
+				document.all.ID_07.style.display="none";
+				document.all.ID_06.style.display="block";
+				document.all.ID_05.style.display="none";
+				document.all.ID_04.style.display="none";
+				document.all.ID_03.style.display="none";
+				document.all.ID_02.style.display="none";
+				document.all.ID_01.style.display="none";
+				document.all.ID_die.style.display="none";
+			}
+			if (Menutext=="五级伤残") {
+				document.all.ID_0.style.display="none";
+				document.all.ID_10.style.display="none";
+			 	document.all.ID_09.style.display="none";
+				document.all.ID_08.style.display="none";
+				document.all.ID_07.style.display="none";
+				document.all.ID_06.style.display="none";
+				document.all.ID_05.style.display="block";
+				document.all.ID_04.style.display="none";
+				document.all.ID_03.style.display="none";
+				document.all.ID_02.style.display="none";
+				document.all.ID_01.style.display="none";
+				document.all.ID_die.style.display="none";
+			}
+			if (Menutext=="四级伤残") {
+				document.all.ID_0.style.display="none";
+				document.all.ID_10.style.display="none";
+				document.all.ID_09.style.display="none";
+				document.all.ID_08.style.display="none";
+				document.all.ID_07.style.display="none";
+				document.all.ID_06.style.display="none";
+				document.all.ID_05.style.display="none";
+				document.all.ID_04.style.display="block";
+				document.all.ID_03.style.display="none";
+				document.all.ID_02.style.display="none";
+				document.all.ID_01.style.display="none";
+				document.all.ID_die.style.display="none";
+			}
+			if (Menutext=="三级伤残") {
+				document.all.ID_0.style.display="none";
+				document.all.ID_10.style.display="none";
+				document.all.ID_09.style.display="none";
+				document.all.ID_08.style.display="none";
+				document.all.ID_07.style.display="none";
+				document.all.ID_06.style.display="none";
+				document.all.ID_05.style.display="none";
+				document.all.ID_04.style.display="none";
+				document.all.ID_03.style.display="block";
+				document.all.ID_02.style.display="none";
+				document.all.ID_01.style.display="none";
+				document.all.ID_die.style.display="none";
+			}
+			if (Menutext=="二级伤残") {
+				document.all.ID_0.style.display="none";
+				document.all.ID_10.style.display="none";
+				document.all.ID_09.style.display="none";
+				document.all.ID_08.style.display="none";
+				document.all.ID_07.style.display="none";
+				document.all.ID_06.style.display="none";
+				document.all.ID_05.style.display="none";
+				document.all.ID_04.style.display="none";
+				document.all.ID_03.style.display="none";
+				document.all.ID_02.style.display="block";
+				document.all.ID_01.style.display="none";
+				document.all.ID_die.style.display="none";
+			}
+			if (Menutext=="一级伤残") {
+				document.all.ID_0.style.display="none";
+				document.all.ID_10.style.display="none";
+				document.all.ID_09.style.display="none";
+				document.all.ID_08.style.display="none";
+				document.all.ID_07.style.display="none";
+				document.all.ID_06.style.display="none";
+				document.all.ID_05.style.display="none";
+				document.all.ID_04.style.display="none";
+				document.all.ID_03.style.display="none";
+				document.all.ID_02.style.display="none";
+				document.all.ID_01.style.display="block";
+				document.all.ID_die.style.display="none";
+			}
+			if (Menutext=="工亡") {
+				document.all.ID_0.style.display="none";
+				document.all.ID_10.style.display="none";
+				document.all.ID_09.style.display="none";
+				document.all.ID_08.style.display="none";
+				document.all.ID_07.style.display="none";
+				document.all.ID_06.style.display="none";
+				document.all.ID_05.style.display="none";
+				document.all.ID_04.style.display="none";
+				document.all.ID_03.style.display="none";
+				document.all.ID_02.style.display="none";
+				document.all.ID_01.style.display="none";
+				document.all.ID_die.style.display="block";
+			}
+
+		}
+	</script>
+</head>
+
+<body>
+   <table>
+		<form name="form1">
+			<td>
+				<select name="type" id="type" onChange="changeMenu(document.form1.type.options[document.form1.type.selectedIndex].text)">
+					<option selected>选择伤残等级</option>
+					<option value="1">无伤残</option>
+					<option value="2">十级伤残</option>
+					<option value="3">九级伤残</option>
+					<option value="4">八级伤残</option>
+					<option value="5">七级伤残</option>
+					<option value="6">六级伤残</option>
+					<option value="7">五级伤残</option>
+					<option value="8">四级伤残</option>
+					<option value="9">三级伤残</option>	
+					<option value="10">二级伤残</option>
+					<option value="11">一级伤残</option>
+					<option value="12">工亡</option> 
+
+				</select>
+			</td>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_0" style="display: none">
+				<td>
+					<input type="text" 	id="ylf"	placeholder="工伤医疗费">
+					<br>
+					<input type="text"  id="zyts"	placeholder="住院天数">
+					<br>
+					<input type="text"  id="jtf"	placeholder="交通费">
+					<br>
+					<input type="text" 	id="tglxq"	placeholder="停工留薪期">
+					<br>
+					<input type="text"  id="ygz"	placeholder="原工资">
+					<br>
+					<input type="text"	id="hlf" 	placeholder="护理费">
+					<br>
+					<input type="button" name="res0" 	value="计算结果"	onclick="account('0')">
+				</td>
+			</tr>
+			<br>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_10" style="display: none">
+				<td>
+					<input type="text" 	id="ylf_10"	placeholder="工伤医疗费">
+					<br>
+					<input type="text"  id="zyts_10"	placeholder="住院天数">
+					<br>
+					<input type="text"  id="jtf_10"	placeholder="交通费">
+					<br>
+					<input type="text" 	id="tglxq_10"	placeholder="停工留薪期">
+					<br>
+					<input type="text"  id="ygz_10"	placeholder="原工资">
+					<br>
+					<input type="text"	id="hlf_10" 	placeholder="护理费">
+					<br>
+					<input type="text"  id="ycx_sc_bzj_10" 	placeholder="一次性伤残补助金">
+					<br>
+					<input type="text"  id="ycx_gsyl_bzj_10" 	placeholder="一次性工伤医疗补助金">
+					<br>
+					<input type="text" 	id="ycx_scjy_bzj_10"	placeholder="一次性伤残就业补助金">
+					<br>
+					<input type="button" name="res10" 	value="计算结果" onclick="account('10')">
+				</td>
+			</tr>
+			 <tr align="left" bgcolor="#E3E3E3" id="ID_09" style="display: none">
+				<td>
+					<input type="text" 	id="ylf_09"	placeholder="工伤医疗费">
+					<br>
+					<input type="text"  id="zyts_09"	placeholder="住院天数">
+					<br>
+					<input type="text"  id="jtf_09"	placeholder="交通费">
+					<br>
+					<input type="text" 	id="tglxq_09"	placeholder="停工留薪期">
+					<br>
+					<input type="text"  id="ygz_09"	placeholder="原工资">
+					<br>
+					<input type="text"	id="hlf_09" 	placeholder="护理费">
+					<br>
+					<input type="text"  id="ycx_sc_bzj_09" 	placeholder="一次性伤残补助金9">
+					<br>
+					<input type="text"  id="ycx_gsyl_bzj_09" 	placeholder="一次性工伤医疗补助金9">
+					<br>
+					<input type="text" 	id="ycx_scjy_bzj_09"	placeholder="一次性伤残就业补助金9">
+					<br>
+					<input type="button" name="res09" 	value="计算结果" onclick="account('09')">
+				</td>
+			</tr>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_08" style="display: none">
+				<td>
+					<input type="text" 	id="ylf_08"	placeholder="工伤医疗费">
+					<br>
+					<input type="text"  id="zyts_08"	placeholder="住院天数">
+					<br>
+					<input type="text"  id="jtf_08"	placeholder="交通费">
+					<br>
+					<input type="text" 	id="tglxq_08"	placeholder="停工留薪期">
+					<br>
+					<input type="text"  id="ygz_08"	placeholder="原工资">
+					<br>
+					<input type="text"	id="hlf_08" 	placeholder="护理费">
+					<br>
+					<input type="text"  id="ycx_sc_bzj_08" 	placeholder="一次性伤残补助金8">
+					<br>
+					<input type="text"  id="ycx_gsyl_bzj_08" 	placeholder="一次性工伤医疗补助金8">
+					<br>
+					<input type="text" 	id="ycx_scjy_bzj_08"	placeholder="一次性伤残就业补助金8">
+					<br>
+					<input type="button" name="res08" 	value="计算结果" onclick="account('08')">
+				</td>
+			</tr>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_07" style="display: none">
+				<td>
+					<input type="text" 	id="ylf_07"	placeholder="工伤医疗费">
+					<br>
+					<input type="text"  id="zyts_07"	placeholder="住院天数">
+					<br>
+					<input type="text"  id="jtf_07"	placeholder="交通费">
+					<br>
+					<input type="text" 	id="tglxq_07"	placeholder="停工留薪期">
+					<br>
+					<input type="text"  id="ygz_07"	placeholder="原工资">
+					<br>
+					<input type="text"	id="hlf_07" 	placeholder="护理费">
+					<br>
+					<input type="text"  id="ycx_sc_bzj_07" 	placeholder="一次性伤残补助金7">
+					<br>
+					<input type="text"  id="ycx_gsyl_bzj_07" 	placeholder="一次性工伤医疗补助金7">
+					<br>
+					<input type="text" 	id="ycx_scjy_bzj_07"	placeholder="一次性伤残就业补助金7">
+					<br>
+					<input type="button" name="res07" 	value="计算结果" onclick="account('07')">
+				</td>
+			</tr>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_06" style="display: none">
+				<td>
+					<input type="text" 	id="ylf_06"	placeholder="工伤医疗费">
+					<br>
+					<input type="text"  id="zyts_06"	placeholder="住院天数">
+					<br>
+					<input type="text"  id="jtf_06"	placeholder="交通费">
+					<br>
+					<input type="text" 	id="tglxq_06"	placeholder="停工留薪期">
+					<br>
+					<input type="text"  id="ygz_06"	placeholder="原工资">
+					<br>
+					<input type="text"	id="hlf_06" 	placeholder="护理费">
+					<br>
+					<input type="text"  id="ycx_sc_bzj_06" 	placeholder="一次性伤残补助金6">
+					<br>
+					<input type="text"  id="ycx_gsyl_bzj_06" 	placeholder="一次性工伤医疗补助金6">
+					<br>
+					<input type="text" 	id="ycx_scjy_bzj_06"	placeholder="一次性伤残就业补助金6">
+					<br>
+					<input type="text"  id="fzqjfy_06"			placeholder="辅助器具费用6">
+					<br>
+					<input type="text"  id="scjt_06"			placeholder="伤残津贴6">
+					<br>
+					<input type="button" name="res06" 	value="计算结果" onclick="account('06')">
+				</td>
+			</tr>
+
+			<tr align="left" bgcolor="#E3E3E3" id="ID_05" style="display: none">
+				<td>
+					<input type="text" 	id="ylf_05"	placeholder="工伤医疗费">
+					<br>
+					<input type="text"  id="zyts_05"	placeholder="住院天数">
+					<br>
+					<input type="text"  id="jtf_05"	placeholder="交通费">
+					<br>
+					<input type="text" 	id="tglxq_05"	placeholder="停工留薪期">
+					<br>
+					<input type="text"  id="ygz_05"	placeholder="原工资">
+					<br>
+					<input type="text"	id="hlf_05" 	placeholder="护理费">
+					<br>
+					<input type="text"  id="ycx_sc_bzj_05" 	placeholder="一次性伤残补助金5">
+					<br>
+					<input type="text"  id="ycx_gsyl_bzj_05" 	placeholder="一次性工伤医疗补助金5">
+					<br>
+					<input type="text" 	id="ycx_scjy_bzj_05"	placeholder="一次性伤残就业补助金5">
+					<br>
+					<input type="text"  id="fzqjfy_05"			placeholder="辅助器具费用5">
+					<br>
+					<input type="text"  id="scjt_05"			placeholder="伤残津贴5">
+					<br>
+					<input type="button" name="res05" 	value="计算结果" onclick="account('05')">
+				</td>
+			</tr>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_04" style="display: none">
+				<td>
+					<input type="text" 	id="ylf_04"	placeholder="工伤医疗费">
+					<br>
+					<input type="text"  id="zyts_04"	placeholder="住院天数">
+					<br>
+					<input type="text"  id="jtf_04"	placeholder="交通费">
+					<br>
+					<input type="text" 	id="tglxq_04"	placeholder="停工留薪期">
+					<br>
+					<input type="text"  id="ygz_04"	placeholder="原工资">
+					<br>
+					<input type="text"	id="hlf_04" 	placeholder="护理费">
+					<br>
+					<input type="text"  id="ycx_sc_bzj_04" 	placeholder="一次性伤残补助金4">
+					<br>
+					<input type="text"  id="fzqjfy_04"			placeholder="辅助器具费用4">
+					<br>
+					<input type="text"  id="scjt_04"			placeholder="伤残津贴4">
+					<br>
+					<input type="text"  id="shhlf_04"			placeholder="生活护理费4">
+					<br>
+					<input type="text"  id="gyqsfxj_04"		placeholder="供养亲属抚恤金4">
+					<br>
+					<input type="button" name="res04" 	value="计算结果" onclick="account('04')">
+				</td>
+			</tr>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_03" style="display: none">
+				<td>
+					<input type="text" 	id="ylf_03"	placeholder="工伤医疗费">
+					<br>
+					<input type="text"  id="zyts_03"	placeholder="住院天数">
+					<br>
+					<input type="text"  id="jtf_03"	placeholder="交通费">
+					<br>
+					<input type="text" 	id="tglxq_03"	placeholder="停工留薪期">
+					<br>
+					<input type="text"  id="ygz_03"	placeholder="原工资">
+					<br>
+					<input type="text"	id="hlf_03" 	placeholder="护理费">
+					<br>
+					<input type="text"  id="ycx_sc_bzj_03" 	placeholder="一次性伤残补助金3">
+					<br>
+					<input type="text"  id="fzqjfy_03"			placeholder="辅助器具费用3">
+					<br>
+					<input type="text"  id="scjt_03"			placeholder="伤残津贴3">
+					<br>
+					<input type="text"  id="shhlf_03"			placeholder="生活护理费3">
+					<br>
+					<input type="text"  id="gyqsfxj_03"		placeholder="供养亲属抚恤金3">
+					<br>
+					<input type="button" name="res03" 	value="计算结果" onclick="account('03')">
+				</td>
+			</tr>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_02" style="display: none">
+				<td>
+					<input type="text" 	id="ylf_02"	placeholder="工伤医疗费">
+					<br>
+					<input type="text"  id="zyts_02"	placeholder="住院天数">
+					<br>
+					<input type="text"  id="jtf_02"	placeholder="交通费">
+					<br>
+					<input type="text" 	id="tglxq_02"	placeholder="停工留薪期">
+					<br>
+					<input type="text"  id="ygz_02"	placeholder="原工资">
+					<br>
+					<input type="text"	id="hlf_02" 	placeholder="护理费">
+					<br>
+					<input type="text"  id="ycx_sc_bzj_02" 	placeholder="一次性伤残补助金2">
+					<br>
+					<input type="text"  id="fzqjfy_02"			placeholder="辅助器具费用2">
+					<br>
+					<input type="text"  id="scjt_02"			placeholder="伤残津贴2">
+					<br>
+					<input type="text"  id="shhlf_02"			placeholder="生活护理费2">
+					<br>
+					<input type="text"  id="gyqsfxj_02"		placeholder="供养亲属抚恤金2">
+					<br>
+					<input type="button" name="res02" 	value="计算结果" onclick="account('02')">
+				</td>
+			</tr>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_01" style="display: none">
+				<td>
+					<input type="text" 	id="ylf_01"	placeholder="工伤医疗费">
+					<br>
+					<input type="text"  id="zyts_01"	placeholder="住院天数">
+					<br>
+					<input type="text"  id="jtf_01"	placeholder="交通费">
+					<br>
+					<input type="text" 	id="tglxq_01"	placeholder="停工留薪期">
+					<br>
+					<input type="text"  id="ygz_01"	placeholder="原工资">
+					<br>
+					<input type="text"	id="hlf_01" 	placeholder="护理费">
+					<br>
+					<input type="text"  id="ycx_sc_bzj_01" 	placeholder="一次性伤残补助金1">
+					<br>
+					<input type="text"  id="fzqjfy_01"			placeholder="辅助器具费用1">
+					<br>
+					<input type="text"  id="scjt_01"			placeholder="伤残津贴1">
+					<br>
+					<input type="text"  id="shhlf_01"			placeholder="生活护理费1">
+					<br>
+					<input type="text"  id="gyqsfxj_01"		placeholder="供养亲属抚恤金1">
+					<br>
+					<input type="button" name="res01" 	value="计算结果" onclick="account('01')">
+				</td>
+			</tr>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_die" style="display: none">
+				<td>
+
+					<input type="text"  id="gwylf_die" 	placeholder="工亡医疗费">
+					<br>
+					<input type="text"  id="zyhsbzf_die"			placeholder="住院伙食补助费">
+					<br>
+					<input type="text"  id="jtf_die"			placeholder="交通费">
+					<br>
+					<input type="text"  id="hlf_die"			placeholder="护理费">
+					<br>
+					<input type="text"  id="szbzj_die"			placeholder="丧葬补助金">
+					<br>
+					<input type="text"  id="ycx_gw_bzj_die"		placeholder="一次性工亡补助金">
+					<br>
+					<input type="text"  id="gyqsfxj_die"		placeholder="供养亲属抚恤金">
+					<br>
+					<input type="button" name="res_die" 	value="计算结果" onclick="account('die')">
+				</td>
+			</tr> 
+				<td><input type="text"  id="res_test" readonly="true"></td>
+
+		
+		</form>
+  </table>
+</body>
+</html>

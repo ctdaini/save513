@@ -1,0 +1,42 @@
+<ion-view view-title="小课堂">
+    <ion-content>
+      <label class="item item-input item-select">
+            <div class="input-label">
+                章节选择
+            </div>
+            <select ng-change="change(x)" ng-model="x" >
+                <option value="1">第一章</option>
+                <option value="2">第二章</option>
+                <option value="3">第三章</option>
+                <option value="4">第四章</option>
+                <option value="5">第五章</option>
+                <option value="6">第六章</option>
+            </select>
+        </label>
+
+        <div class="list card">
+           <label class="item item-input " >{{page}}</label> 
+           <div class="item item-image">
+                <img ng-src="{{url}}">
+            </div>
+              <div class="item item-divider">
+                   学编程比打游戏有趣多了
+                </div>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer">
+        <div class="bar bar-footer">
+        <div class="tabs tabs-icon-top">
+            <a class="tab-item " ng-click="pic_pre()">
+                <i class="icon ion-arrow-left-a "></i> 上一篇
+            </a>
+           <!--  <a class="tab-item" ng-click="select()">
+                <i class="icon ion-android-desktop"></i> 选择章节
+            </a> -->
+            <a class="tab-item" ng-click="pic_next()">
+                <i class="icon ion-arrow-right-a"></i> 下一篇
+            </a>
+        </div>
+    </div>
+    </div>
+</ion-view>

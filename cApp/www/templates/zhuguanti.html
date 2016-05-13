@@ -1,0 +1,30 @@
+<ion-view view-title="主观题">
+    <ion-content>
+        <div ng-repeat='results in result |filter:{id:item_num2}|limitTo:1'>
+            <div class="card">
+                <div class="item item-divider">
+                    <pre><code><br><em>{{results.id}}、{{results.Title}}</em></code></pre>
+                </div>
+                <div class="item item-text-wrap item-dark" ng-hide="hide">
+                    <pre><code>{{results.Answer}}</code></pre>
+                </div>
+                <div class="item item-divider">
+                    官人，做对这道题是年薪上百万的节奏啊~！！！
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer">
+        <div class="tabs tabs-icon-top">
+            <a class="tab-item " ng-click="item_num_pre2()">
+                <i class="icon ion-arrow-left-a "></i> 上一题
+            </a>
+            <a class="tab-item" ng-click="lookAnswer()">
+                <i class="icon ion-android-desktop"></i> 查看答案
+            </a>
+            <a class="tab-item" ng-click="item_num_next2()">
+                <i class="icon ion-arrow-right-a"></i> 下一题
+            </a>
+        </div>
+    </div>
+</ion-view>

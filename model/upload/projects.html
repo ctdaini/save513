@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href='http://fonts.useso.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Resource style -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/default.css"> -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <title>C程序设计全终端在线学习平台</title>
+</head>
+
+<body>
+    <nav class="cd-side-navigation">
+        <ul>
+            <li>
+                <a href="#0" class="selected" data-menu="projects">
+                    <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                        <g transform="translate(0, 0)">
+                            <rect x="1" y="1" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="22" height="22" stroke-linejoin="miter"></rect>
+                            <rect data-color="color-2" x="5" y="5" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect>
+                            <rect data-color="color-2" x="14" y="5" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect>
+                            <rect data-color="color-2" x="5" y="14" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect>
+                            <rect data-color="color-2" x="14" y="14" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="5" height="5" stroke-linejoin="miter"></rect>
+                        </g>
+                    </svg>
+                    管理客观题
+                </a>
+            </li>
+            <li>
+                <a href="#0" data-menu="services">
+                    <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                        <g transform="translate(0, 0)">
+                            <polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 16,7 16,2 8,2 8,7 " stroke-linejoin="miter"></polyline>
+                            <rect x="1" y="7" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="22" height="15" stroke-linejoin="miter"></rect>
+                            <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="5" y1="7" x2="5" y2="22" stroke-linejoin="miter"></line>
+                            <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="19" y1="7" x2="19" y2="22" stroke-linejoin="miter"></line>
+                        </g>
+                    </svg>
+                    管理主观题
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- .cd-side-navigation -->
+    <main class="cd-main">
+        <section class="cd-section projects visible">
+            <header>
+                <div class="cd-title">
+                    <h2>添加试题</h2>
+                    <span>开始</span>
+                </div>
+                <a href="#projects-content" class="cd-scroll">Scroll Down</a>
+            </header>
+            <!-- class="cd-content"  -->
+            <div align="center" id="projects-content">
+                <form role="form" action="http://ionicserver.applinzi.com/model/sel_upload.php" method="GET">
+                     <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="form-kgt">题目信息:</span>
+                            <input type="text" class="form-control"  name="form-kgt" aria-describedby="form-kgt">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="form-A">A选择项:</span>
+                            <input type="text" class="form-control" name="form-A" aria-describedby="form-A">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="form-B">B选择项:</span>
+                            <input type="text" class="form-control"  name="form-B" aria-describedby="form-B">
+                        </div>
+                 </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="form-C">C选择项:</span>
+                            <input type="text" class="form-control" name="form-C" aria-describedby="form-C">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="form-D">D选择项:</span>
+                            <input type="text" class="form-control" name="form-D"  aria-describedby="form-D">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="form-R">正确选项</span>
+                            <input type="text" class="form-control"  name="form-R"  aria-describedby="form-R">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn  btn-danger form-control">确定</button>
+                </form>
+            </div>
+            <!-- .cd-content -->
+        </section>
+    </main>
+    <!-- .cd-main class="projects"-->
+    <div id="cd-loading-bar" data-scale="1"></div>
+    <!-- lateral loading bar -->
+    <!-- <script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js" type="text/javascript"></script> -->
+
+    <script>
+    window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')
+    </script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Resource jQuery -->
+</body>
+
+</html>

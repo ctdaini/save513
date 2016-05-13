@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>工伤赔偿</title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript" src="js/result.js"></script>
+</head>
+
+<body>
+   <table>
+		<form name="form1">
+			<td>
+				<select name="type" id="type" onChange="changeMenu(document.form1.type.options[document.form1.type.selectedIndex].text)">
+					<option selected>选择伤残等级</option>
+					<option value="1">无伤残</option>
+					<option value="2">十级伤残</option>
+				</select>
+			</td>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_0" style="display: none">
+				<td>
+					<input type="text" 	id="ylf"	placeholder="工伤医疗费">
+					<input type="text"  id="zyts"	placeholder="住院天数">
+					<input type="text"  id="jtf"	placeholder="交通费">
+					<input type="text" 	id="tglxq"	placeholder="停工留薪期">
+					<input type="text"  id="ygz"	placeholder="原工资">
+					<input type="text"	id="hlf" 	placeholder="护理费">
+					<!-- <td><input type="text"	id="res" 	readonly="true"></td> -->
+					<td><input type="button" value="计算结果"	onclick="account('0')" ></td>
+					<!-- <textarea  id="res" cols="30" rows="10" readonly="true"></textarea> -->
+					
+				</td>
+			</tr>
+			<br>
+			<tr align="left" bgcolor="#E3E3E3" id="ID_10" style="display: none">
+				<td>
+					<input type="text"  id="ycx_sc_bzj" placeholder="一次性伤残补助金">
+					<input type="text"  id="ycx_gsyl_bzj" placeholder="一次性工伤医疗补助金">
+					<input type="text"  id="ycx_scjy_bzj" placeholder="一次性伤残就业补助金">
+					<!-- <td><input type="text"	id="res10" 	readonly="true"></td> -->
+					<td><input type="button" value="计算结果"	onclick="account('10')" ></td>
+					<!-- <input type="text"  id="res" readonly="true"> -->
+					<!-- <input type="button" value="res_10" onclick="account_10()"> -->
+				</td>
+			</tr>
+			<td>
+				<input type="text"  id="res_test" readonly="true">
+			</td>
+			
+		</form>
+  </table>
+</body>
+</html>
